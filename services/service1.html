@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональные тренировки - Фитнес-клуб "Пирамида"</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/736x/a9/64/b5/a964b5e732fc8bd160c1d44303852d27.jpg" alt="Логотип" class="logo-img">
+                <div class="logo">Фитнес-клуб "Пирамида"</div>
+            </div>
+            <!-- Меню сайта -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/catalog.html">Услуги</a></li>
+                    <li><a href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-button" onclick="showLoginModal()">Вход</button>
+                    <button class="auth-button" onclick="showRegisterModal()">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Описание услуги -->
+    <main class="service-page">
+        <h1>Персональные тренировки</h1>
+        
+        <div class="service-image">
+            <a href="https://via.placeholder.com/800x500" target="_blank">
+                <img src="https://i.pinimg.com/originals/48/ee/c6/48eec68b9ae80d81b493388fea2d2a5a.png" alt="Персональные тренировки">
+            </a>
+        </div>
+        
+        <section class="service-description">
+            <h2>Описание услуги</h2>
+            <p>Персональные тренировки в фитнес-клубе "Пирамида" - это индивидуальный подход к достижению ваших фитнес-целей под руководством опытного тренера. Наши тренеры проведут детальный анализ вашего физического состояния, обсудят ваши цели и разработают персональную программу тренировок.</p>
+        </section>
+        
+        <section class="service-features">
+            <h2>Характеристики услуги</h2>
+            <ul>
+                <li>Индивидуальный подход к каждому клиенту</li>
+                <li>Разработка персональной программы тренировок</li>
+                <li>Постоянный контроль и поддержка тренера</li>
+                <li>Корректировка программы в зависимости от результатов</li>
+                <li>Доступ к эксклюзивному оборудованию</li>
+                <li>Гибкий график занятий</li>
+            </ul>
+        </section>
+        
+        <section class="service-details">
+            <h2>Подробное описание услуги</h2>
+            <p>Персональные тренировки - это наиболее эффективный способ достижения желаемых результатов в фитнесе. Работа с персональным тренером позволяет максимально использовать ваше время в тренажерном зале, обеспечивая безопасность выполнения упражнений и постоянную мотивацию.</p>
+            
+            <h3>Преимущества персональных тренировок:</h3>
+            <ol>
+                <li>Максимальная эффективность тренировок</li>
+                <li>Безопасное выполнение упражнений под контролем профессионала</li>
+                <li>Быстрое достижение видимых результатов</li>
+                <li>Индивидуальная программа, адаптированная под ваши потребности</li>
+                <li>Рекомендации по питанию и образу жизни</li>
+                <li>Постоянная мотивация и поддержка тренера</li>
+                <li>Отслеживание прогресса и корректировка программы</li>
+            </ol>
+            
+            <h3>Варианты персональных тренировок:</h3>
+            <p>В нашем клубе вы можете выбрать различные направления персональных тренировок:</p>
+            <ul>
+                <li>Силовые тренировки для наращивания мышечной массы</li>
+                <li>Функциональные тренировки для развития всех групп мышц</li>
+                <li>Кардио-тренировки для снижения веса и улучшения выносливости</li>
+                <li>Растяжка и реабилитационные программы</li>
+                <li>Специализированные программы для женщин и мужчин</li>
+            </ul>
+        </section>
+        <div class="service-navigation">
+            <a href="../pages/catalog.html">← Вернуться к каталогу</a>
+        </div>
+    </main>
+    
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в личный кабинет</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Войти</button>
+                </div>
+                <p class="modal-footer">Нет аккаунта? <a href="#" onclick="showRegisterModal()">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+                <p class="modal-footer">Уже есть аккаунт? <a href="#" onclick="showLoginModal()">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Фитнес-клуб "Пирамида". Все права защищены.</p>
+                <p>г. Москва, ул. Спортивная, д. 1 | +7 (123) 456-78-90 | info@pyramid-fitness.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 

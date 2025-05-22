@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес-клуб "Пирамида"</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/736x/a9/64/b5/a964b5e732fc8bd160c1d44303852d27.jpg" alt="Логотип" class="logo-img">
+                <div class="logo">Фитнес-клуб "Пирамида"</div>
+            </div>
+            <!-- Меню сайта -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pages/catalog.html">Услуги</a></li>
+                    <li><a href="pages/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-button" onclick="showLoginModal()">Вход</button>
+                    <button class="auth-button" onclick="showRegisterModal()">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Главная страница -->
+    <main>
+        <!-- Hero секция -->
+        <section class="hero">
+            <div class="container">
+                <h1>Достигните идеальной формы вместе с нами</h1>
+                <p>Фитнес-клуб "Пирамида" - это современное пространство для тренировок, отдыха и здорового образа жизни</p>
+                <a href="pages/catalog.html" class="btn">Наши услуги</a>
+            </div>
+        </section>
+        
+        <div class="container">
+            <!-- О нас -->
+            <section id="about">
+                <h2 class="section-title">О нашем клубе</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Фитнес-клуб "Пирамида" - это современный спортивный комплекс, оснащенный новейшим оборудованием и предлагающий широкий спектр услуг для поддержания здоровья и красоты. Наша миссия - помочь каждому клиенту достичь своих целей в фитнесе и здоровом образе жизни.</p>
+                        <p>Мы гордимся профессиональной командой тренеров, которые разрабатывают индивидуальные программы тренировок, учитывая ваши особенности и пожелания.</p>
+                    </div>
+                    <div class="about-gallery">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Наш зал">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Наши преимущества -->
+            <section id="features">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <img src="https://img.icons8.com/color/96/000000/dumbbell.png" alt="Оборудование">
+                        <h3>Современное оборудование</h3>
+                        <p>Новейшие тренажеры от ведущих мировых производителей</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://img.icons8.com/color/96/000000/user-group-man-man.png" alt="Тренеры">
+                        <h3>Профессиональные тренеры</h3>
+                        <p>Сертифицированные специалисты с многолетним опытом</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://img.icons8.com/color/96/000000/yoga.png" alt="Программы">
+                        <h3>Разнообразие программ</h3>
+                        <p>Более 20 направлений для любого уровня подготовки</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://img.icons8.com/color/96/000000/massage.png" alt="Релаксация">
+                        <h3>Зона релаксации</h3>
+                        <p>СПА, массаж и восстановление после тренировок</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- История фирмы -->
+            <section id="history">
+                <h2 class="section-title">История клуба</h2>
+                <div class="history-content">
+                    <div class="history-image">
+                        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="История клуба">
+                    </div>
+                    <div class="history-text">
+                        <p>Фитнес-клуб "Пирамида" был основан в 2010 году с простой идеей - создать пространство, где каждый человек сможет работать над своим здоровьем и физической формой в комфортных условиях.</p>
+                        <p>За более чем 10 лет работы, мы выросли из небольшого тренажерного зала до полноценного фитнес-центра с несколькими локациями в городе. Ежегодно мы обновляем оборудование и расширяем спектр услуг, чтобы соответствовать современным тенденциям в области фитнеса.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Команда -->
+            <section id="team">
+                <h2 class="section-title">Наша команда</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Алексей Петров">
+                        <h3>Алексей Петров</h3>
+                        <p class="position">Главный тренер</p>
+                        <p>Мастер спорта по пауэрлифтингу, 15 лет опыта работы с клиентами разного уровня подготовки</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1609952542840-df54cfddc3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Елена Соколова">
+                        <h3>Елена Соколова</h3>
+                        <p class="position">Инструктор групповых программ</p>
+                        <p>Сертифицированный инструктор по йоге, пилатесу и функциональному тренингу</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e6349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Михаил Иванов">
+                        <h3>Михаил Иванов</h3>
+                        <p class="position">Персональный тренер</p>
+                        <p>Специалист по функциональному тренингу и спортивной реабилитации</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1541&q=80" alt="Ольга Смирнова">
+                        <h3>Ольга Смирнова</h3>
+                        <p class="position">Диетолог</p>
+                        <p>Сертифицированный нутрициолог, разрабатывает индивидуальные программы питания</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в личный кабинет</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Войти</button>
+                </div>
+                <p class="modal-footer">Нет аккаунта? <a href="#" onclick="showRegisterModal()">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
 
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+                <p class="modal-footer">Уже есть аккаунт? <a href="#" onclick="showLoginModal()">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Фитнес-клуб "Пирамида". Все права защищены.</p>
+                <p>г. Москва, ул. Спортивная, д. 1 | +7 (123) 456-78-90 | info@pyramid-fitness.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

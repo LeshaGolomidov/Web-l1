@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Групповые занятия - Фитнес-клуб "Пирамида"</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/736x/a9/64/b5/a964b5e732fc8bd160c1d44303852d27.jpg" alt="Логотип" class="logo-img">
+                <div class="logo">Фитнес-клуб "Пирамида"</div>
+            </div>
+            <!-- Меню сайта -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/catalog.html">Услуги</a></li>
+                    <li><a href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-button" onclick="showLoginModal()">Вход</button>
+                    <button class="auth-button" onclick="showRegisterModal()">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Описание услуги -->
+    <main class="service-page">
+        <h1>Групповые занятия</h1>
+        
+        <div class="service-image">
+            <a href="https://via.placeholder.com/800x500" target="_blank">
+                <img src="https://static.tildacdn.com/tild6461-3137-4536-a633-356534336235/15-Yoga-Classes-with.jpg" alt="Групповые занятия">
+            </a>
+        </div>
+        
+        <section class="service-description">
+            <h2>Описание услуги</h2>
+            <p>Групповые занятия в фитнес-клубе "Пирамида" - это эффективные тренировки в компании единомышленников под руководством профессиональных инструкторов. Групповые тренировки помогают поддерживать мотивацию, создают дружескую атмосферу и делают процесс тренировок более разнообразным и увлекательным.</p>
+        </section>
+        
+        <section class="service-features">
+            <h2>Характеристики услуги</h2>
+            <ul>
+                <li>Разнообразие групповых программ для разных уровней подготовки</li>
+                <li>Профессиональные инструкторы с международными сертификатами</li>
+                <li>Современное оборудование и просторные залы</li>
+                <li>Энергичная музыка и мотивирующая атмосфера</li>
+                <li>Гибкий график занятий с утренними и вечерними классами</li>
+                <li>Регулярное обновление программ тренировок</li>
+            </ul>
+        </section>
+        
+        <section class="service-details">
+            <h2>Подробное описание услуги</h2>
+            <p>Групповые занятия в фитнес-клубе "Пирамида" предлагают широкий выбор направлений для людей с любым уровнем физической подготовки. Тренировки проходят под руководством опытных инструкторов, которые следят за правильностью выполнения упражнений и создают позитивную атмосферу в группе.</p>
+            
+            <h3>Преимущества групповых занятий:</h3>
+            <ol>
+                <li>Высокая мотивация благодаря групповой динамике</li>
+                <li>Разнообразие тренировок не дает заскучать</li>
+                <li>Четкое расписание помогает соблюдать регулярность</li>
+                <li>Возможность познакомиться с единомышленниками</li>
+                <li>Экономия средств по сравнению с персональными тренировками</li>
+                <li>Тренировки под музыку делают занятия увлекательными</li>
+                <li>Постоянное совершенствование техники под руководством инструктора</li>
+            </ol>
+            
+            <h3>Направления групповых программ:</h3>
+            <p>В нашем клубе представлены следующие направления групповых занятий:</p>
+            <ul>
+                <li>Силовые тренировки (Body Pump, Cross Training)</li>
+                <li>Кардио-программы (Zumba, Step Aerobics, Cycling)</li>
+                <li>Танцевальные направления (Dance Mix, Hip-Hop Fitness)</li>
+                <li>Программы для развития гибкости (Yoga, Stretching, Pilates)</li>
+                <li>Высокоинтенсивные интервальные тренировки (HIIT, Tabata)</li>
+                <li>Боевые искусства (Box Fitness, MMA Workout)</li>
+                <li>Специальные программы (Здоровая спина, 50+, Для беременных)</li>
+            </ul>
+        </section>
+        <div class="service-navigation">
+            <a href="../pages/catalog.html">← Вернуться к каталогу</a>
+        </div>
+    </main>
+    
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в личный кабинет</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Войти</button>
+                </div>
+                <p class="modal-footer">Нет аккаунта? <a href="#" onclick="showRegisterModal()">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+                <p class="modal-footer">Уже есть аккаунт? <a href="#" onclick="showLoginModal()">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Фитнес-клуб "Пирамида". Все права защищены.</p>
+                <p>г. Москва, ул. Спортивная, д. 1 | +7 (123) 456-78-90 | info@pyramid-fitness.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 

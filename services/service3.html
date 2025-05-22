@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Массаж и СПА - Фитнес-клуб "Пирамида"</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/736x/a9/64/b5/a964b5e732fc8bd160c1d44303852d27.jpg" alt="Логотип" class="logo-img">
+                <div class="logo">Фитнес-клуб "Пирамида"</div>
+            </div>
+            <!-- Меню сайта -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/catalog.html">Услуги</a></li>
+                    <li><a href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-button" onclick="showLoginModal()">Вход</button>
+                    <button class="auth-button" onclick="showRegisterModal()">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Описание услуги -->
+    <main class="service-page">
+        <h1>Массаж и СПА</h1>
+        
+        <div class="service-image">
+            <a href="https://avatars.mds.yandex.net/get-altay/9717139/2a000001891b49db82c996b27b16118dc383/diploma" target="_blank">
+                <img src="https://avatars.mds.yandex.net/get-altay/9717139/2a000001891b49db82c996b27b16118dc383/diploma" alt="Массаж и СПА">
+            </a>
+        </div>
+        
+        <section class="service-description">
+            <h2>Описание услуги</h2>
+            <p>Массаж и СПА-процедуры в фитнес-клубе "Пирамида" - это идеальный способ расслабиться после интенсивных тренировок, снять напряжение и восстановить силы. Наши специалисты используют профессиональные техники массажа и современное оборудование для достижения максимального эффекта.</p>
+        </section>
+        
+        <section class="service-features">
+            <h2>Характеристики услуги</h2>
+            <ul>
+                <li>Различные виды массажа: классический, спортивный, релаксационный, антицеллюлитный</li>
+                <li>СПА-процедуры для лица и тела</li>
+                <li>Профессиональные массажисты с медицинским образованием</li>
+                <li>Использование натуральных масел и косметических средств</li>
+                <li>Комфортные кабинеты с релаксирующей атмосферой</li>
+                <li>Возможность приобретения абонементов на курс процедур</li>
+            </ul>
+        </section>
+        
+        <section class="service-details">
+            <h2>Подробное описание услуги</h2>
+            <p>Массаж и СПА-процедуры в нашем клубе - это не только приятные ощущения, но и значительная польза для всего организма. Наши специалисты помогут подобрать программу, которая будет наиболее эффективна именно для вас, учитывая ваши потребности и состояние здоровья.</p>
+            
+            <h3>Преимущества массажа и СПА:</h3>
+            <ol>
+                <li>Снятие мышечного напряжения и боли</li>
+                <li>Улучшение кровообращения и лимфотока</li>
+                <li>Ускорение восстановления после интенсивных нагрузок</li>
+                <li>Уменьшение стресса и тревожности</li>
+                <li>Улучшение качества сна</li>
+                <li>Детоксикация организма</li>
+                <li>Общее улучшение самочувствия и настроения</li>
+            </ol>
+            
+            <h3>Виды массажа и СПА-процедур:</h3>
+            <p>В нашем клубе вы можете выбрать следующие виды массажа и СПА-процедур:</p>
+            <ul>
+                <li>Классический массаж всего тела</li>
+                <li>Спортивный массаж до и после тренировок</li>
+                <li>Релаксационный массаж с ароматерапией</li>
+                <li>Антицеллюлитный массаж</li>
+                <li>Лимфодренажный массаж</li>
+                <li>СПА-уходы для тела (обертывания, скрабирование)</li>
+                <li>СПА-уходы для лица</li>
+            </ul>
+        </section>
+        <div class="service-navigation">
+            <a href="../pages/catalog.html">← Вернуться к каталогу</a>
+        </div>
+    </main>
+    
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в личный кабинет</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Войти</button>
+                </div>
+                <p class="modal-footer">Нет аккаунта? <a href="#" onclick="showRegisterModal()">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+                <p class="modal-footer">Уже есть аккаунт? <a href="#" onclick="showLoginModal()">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Фитнес-клуб "Пирамида". Все права защищены.</p>
+                <p>г. Москва, ул. Спортивная, д. 1 | +7 (123) 456-78-90 | info@pyramid-fitness.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 

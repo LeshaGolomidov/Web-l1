@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диетология - Фитнес-клуб "Пирамида"</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/736x/a9/64/b5/a964b5e732fc8bd160c1d44303852d27.jpg" alt="Логотип" class="logo-img">
+                <div class="logo">Фитнес-клуб "Пирамида"</div>
+            </div>
+            <!-- Меню сайта -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/catalog.html">Услуги</a></li>
+                    <li><a href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="auth-button" onclick="showLoginModal()">Вход</button>
+                    <button class="auth-button" onclick="showRegisterModal()">Регистрация</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Описание услуги -->
+    <main class="service-page">
+        <h1>Диетология</h1>
+        
+        <div class="service-image">
+            <a href="https://cmphmao.ru/sites/default/files/page_covers/5e496ebdf32699716c4f6238305463df.jpg" target="_blank">
+                <img src="https://cmphmao.ru/sites/default/files/page_covers/5e496ebdf32699716c4f6238305463df.jpg" alt="Диетология">
+            </a>
+        </div>
+        
+        <section class="service-description">
+            <h2>Описание услуги</h2>
+            <p>Услуги диетолога в фитнес-клубе "Пирамида" - это профессиональные консультации по питанию, которые помогут вам достичь желаемых результатов в фитнесе. Наши специалисты разработают индивидуальный план питания, учитывая ваши цели, физическую активность, образ жизни и состояние здоровья.</p>
+        </section>
+        
+        <section class="service-features">
+            <h2>Характеристики услуги</h2>
+            <ul>
+                <li>Индивидуальный подход к каждому клиенту</li>
+                <li>Детальный анализ состава тела и метаболизма</li>
+                <li>Разработка персонального плана питания</li>
+                <li>Регулярный мониторинг результатов и корректировка программы</li>
+                <li>Консультации по приготовлению здоровых блюд</li>
+                <li>Рекомендации по приему витаминов и добавок</li>
+            </ul>
+        </section>
+        
+        <section class="service-details">
+            <h2>Подробное описание услуги</h2>
+            <p>Правильное питание - это 70% успеха в достижении фитнес-целей. Наши диетологи помогут вам составить оптимальный рацион, который обеспечит организм всеми необходимыми питательными веществами и при этом будет соответствовать вашим вкусовым предпочтениям.</p>
+            
+            <h3>Преимущества работы с диетологом:</h3>
+            <ol>
+                <li>Научно обоснованный подход к питанию</li>
+                <li>Отсутствие строгих диет и голодания</li>
+                <li>Быстрое достижение результатов без вреда для здоровья</li>
+                <li>Формирование привычек здорового питания на всю жизнь</li>
+                <li>Повышение энергии и работоспособности</li>
+                <li>Улучшение качества сна и общего самочувствия</li>
+                <li>Профилактика заболеваний, связанных с питанием</li>
+            </ol>
+            
+            <h3>Направления диетологии:</h3>
+            <p>Наши диетологи специализируются на следующих направлениях:</p>
+            <ul>
+                <li>Питание для снижения веса</li>
+                <li>Питание для набора мышечной массы</li>
+                <li>Спортивное питание для различных видов активности</li>
+                <li>Питание при метаболических нарушениях</li>
+                <li>Питание для поддержания здоровья и хорошего самочувствия</li>
+                <li>Питание для профилактики заболеваний</li>
+                <li>Детокс-программы</li>
+            </ul>
+        </section>
+        <div class="service-navigation">
+            <a href="../pages/catalog.html">← Вернуться к каталогу</a>
+        </div>
+    </main>
+    
+    <!-- Модальное окно для входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Вход в личный кабинет</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Войти</button>
+                </div>
+                <p class="modal-footer">Нет аккаунта? <a href="#" onclick="showRegisterModal()">Зарегистрироваться</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Телефон</label>
+                    <input type="tel" id="registerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+                <p class="modal-footer">Уже есть аккаунт? <a href="#" onclick="showLoginModal()">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Фитнес-клуб "Пирамида". Все права защищены.</p>
+                <p>г. Москва, ул. Спортивная, д. 1 | +7 (123) 456-78-90 | info@pyramid-fitness.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html> 
